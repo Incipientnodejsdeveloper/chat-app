@@ -1,0 +1,21 @@
+{
+  "name": "socket-101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fakerjs/animal": "^2.2.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "pokedex": "^1.1.0",
+    "pokemon": "^2.3.5",
+    "socket.io": "^4.5.2",
+    "uuid": "^9.0.0"
+  }
+}
