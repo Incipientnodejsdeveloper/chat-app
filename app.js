@@ -30,7 +30,12 @@ function getPokemonAnime() {
             url: pokemonData?.sprites?.animated
         };
     } else {
-        getPokemonAnime();
+        const pokeName = pokemon.random();
+        const pokemonData = pokedex.pokemon(pokeName.toLowerCase());
+        return {
+            name: pokeName || "anonymous",
+            url: pokemonData?.sprites?.animated || ""
+        };
     }
 }
 

@@ -20,7 +20,6 @@ function saveInputs() {
         document.getElementById("input").focus();
         // Remove the blur effect from the chat div
         document.getElementById("chat").style.filter = "none";
-        alert("logged Successfully 😉")
     }else{
         alert("Provide valid userName or RoomId 😋 ")
     }
