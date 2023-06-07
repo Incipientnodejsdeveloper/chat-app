@@ -1,4 +1,4 @@
-const socket = io("http://54.145.184.28:4000", {
+const socket = io("http://localhost:4000", {
     transports: ["websocket"],
 });
 
@@ -90,3 +90,9 @@ const getColorForName = (name) => {
     }
     return nameColors[name];
 };
+
+// user list details;
+
+socket.on('user-list',(users)=>{
+    console.log(users)
+})
